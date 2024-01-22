@@ -1,0 +1,8 @@
+.nav-reponsive{
+    background-color: blue;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
