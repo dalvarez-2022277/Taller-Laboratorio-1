@@ -1,50 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@200;300;400&family=Parisienne&display=swap');
 *{
-    box-sizing: border-box;
-    font-family: 'Work Sans';
     margin: 0;
-    padding: 0;
 }
-html{
-    scroll-behavior: smooth;
+body{
+    background: linear-gradient(to right,#c71515, #a70d0d);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    border-radius: 30px;
+    padding: 45px;
+    z-index: 5;
+}
+/* primera pantalla */
+.intro{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: 2.5s animInto forwards;
+}
+@keyframes animInto {
+    0%{visibility: visible;}
+    1%{visibility: visible;}
+    100%{visibility: hidden;}
 }
 
-.contenedor-header{
-    background: #1e2326;
-    position: fixed;
+.intro .contenido{
+    position: relative;
+    max-width: 300px;
     width: 100%;
-    top: 0;
+    animation: .5s aparecer forwards;
+}
+@keyframes aparecer {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.intro .barra{
+    height: 7px;
+    background: #cf6e6e;
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.intro .barra .progreso{
+    height: 7px;
+    width: 0%;
+    background: #ff0000b7;
+    animation: 1.6s avanzar forwards linear;
+    animation-delay: .3s;
+}
+
+@keyframes avanzar {
+    0%{width: 0;}
+    40%{width: 50%;}
+    60%{width: 50%;}
+    100%{width: 100%;}
+}
+.txt{
+    font-family: 'Montserrat';
+    position: absolute;
     left: 0;
-    z-index: 99;
+    width: 100%;
+    top: -20px;
+    font-size: 22px;
+    color: #666;
 }
-.contenedor-header header{
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: none;
-    align-items: center;
-    padding: 15px 20px;
+.texto1{
+    animation: 3s animTexto forwards;
+    animation-delay: .3s;
 }
-.contenedor-header header .logo a{
-    font-family: 'Righteous';
-    font-size: 36px;
-    color: #cbd0cf;
-    text-decoration:none;
-    margin-right:10px;
-}
-.contenedor-header header ul{
-    display:flex;
-    list-style: none;
-    align-items:center;
-}
-.contenedor-header header nav ul li a{
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
-}
-.contenedor-header header nav ul li a:hover{
-    color: #Ff0000;
+@keyframes animTexto {
+    0%{opacity: 0;}
+    1%{opacity: 1;}
+    99%{opacity: 1;}
+    100%{opacity: 0;}
 }
