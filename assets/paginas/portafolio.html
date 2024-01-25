@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="/assets/styles/stylePortafolio.css">
 </head>
 
 <body>
@@ -22,8 +22,9 @@
                     <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
                     <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">Proyectos</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
                     <li><a href="#multimedia" onclick="seleccionar()">Multimedia</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                    <li><a href="/index.html" onclick="seleccionar()">Vort-x</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -240,6 +241,69 @@
             </div>
         </div>
     </section>
+    <section id="multimedia" class="multimedia">
+        <div class="contenido-seccion">
+            <h2>Multimedia</h2>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GXlckaGr0Eo?si=O5ExMi3yt3JAYbfX"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="/assets/img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                1ra calle 3-33 zona 1 boca del monte, Guatemala
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +502 55576196
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: dalvarez-2022277@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="/assets/scripts/logicaPortafolio.js"></script>
 </body>
 
 </html>
