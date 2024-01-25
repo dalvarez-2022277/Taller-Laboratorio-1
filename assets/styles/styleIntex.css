@@ -372,7 +372,30 @@ section {
     z-index: 0;
     color: black;
     position:absolute;
-    top: 800px;
+    top: 600px;
+    overflow: hidden;
+    font-family: 'Montserrat';
+    box-shadow: -0px 0px 100px rgb(191, 191, 191);
+
+}
+
+.pantalla4 {
+    background: white;
+    z-index: 0;
+    color: black;
+    position:absolute;
+    top: 1150px;
+    overflow: hidden;
+    font-family: 'Montserrat';
+    box-shadow: -0px 0px 100px rgb(191, 191, 191);
+
+}
+.pantalla3 {
+    background: white;
+    z-index: 0;
+    color: black;
+    position:absolute;
+    top: 1711px;
     overflow: hidden;
     font-family: 'Montserrat';
     box-shadow: -0px 0px 100px rgb(191, 191, 191);
