@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
-    <link rel="stylesheet" href="/assets/styles/stylePortafolio.css">
-    <title>Portafolio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
@@ -16,16 +17,16 @@
                 <a href="#">Diego</a>
             </div>
             <nav id="nav">
-                <ui>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre Mi</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Multimedia</a></li>
-                </ui>
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Proyectos</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                    <li><a href="#multimedia" onclick="seleccionar()">Multimedia</a></li>
+                </ul>
             </nav>
-            <div class="nav-reponsive" onclick="mostrarOcultarMenu()">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -33,8 +34,8 @@
 
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
-            <div class="contenido-img">
-                <img src="" alt="">
+            <div class="contenedor-img">
+                <img src="img/Diego.jpg" alt="">
             </div>
             <h1>Diego Alvarez</h1>
             <h2>Estudiante de perito en informatica</h2>
@@ -48,53 +49,79 @@
 
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mi</h2>
+            <h2>Sobre Mí</h2>
             <p><span>Hola, soy Diego Alvarez</span> Un estudiante de 18 años estudiante de informatica 6to año en el
                 centro tecnico kinal, programador
                 y dessarrolador de aplicaciones web y de escritorio graduando de perito informatico.</p>
-        
-             <div class="fila">
+
+            <div class="fila">
                 <div class="col">
                     <h3>Datos Personales</h3>
-                    <ui>
+                    <ul>
                         <li>
                             <strong>Cumpleaños</strong>
                             20-09-2005
                         </li>
                         <li>
-                            <strong>Telefono</strong>
-                            +502 55576196                            
+                            <strong>Teléfono</strong>
+                            +502 55576196
                         </li>
                         <li>
                             <strong>Email</strong>
                             dalvarez-2022277@kinal.edu.gt
                         </li>
                         <li>
-                            <strong>Direccion</strong>
+                            <strong>Dirección</strong>
                             1ra avenida 3-33 zona 1 boca del monte, Guatemala
                         </li>
                         <li>
                             <strong>Cargo</strong>
-                            estudiante
+                            <span>Estudiante</span>
                         </li>
-                    </ui>
+                    </ul>
                 </div>
+
                 <div class="col">
-                    <he>Intereses</he>
+                    <h3>Intereses</h3>
                     <div class="contenedor-intereses">
-                        <div class="intereses">
+                        <div class="interes">
                             <i class="fa-solid fa-gamepad"></i>
-                            <spam>Juegos</spam>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <span>Tecnologia</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>Motos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>Carros</span>
                         </div>
 
                     </div>
                 </div>
-             </div>   
             </div>
-
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
     </section>
-
-
 </body>
 
 </html>
