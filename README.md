@@ -1,1 +1,3 @@
 # Taller-Laboratorio-1
+Los cambios que se dieron a la pagina web de kinal fueron
+1- El tipo de contendor de las imagenes ya se que se me hace mas estetico que este la informacion dentro de la propia imagen al igual que el footer ya que este se me hace mas consiso tambien los botones de las redes sociales son sus iconos en color original y quite la seccion de nuetro blog ya que se me hace irrelevante 
